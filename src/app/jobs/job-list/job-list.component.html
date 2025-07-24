@@ -1,0 +1,31 @@
+<section style="background-color: #fff9e6;" class="py-5">
+  <div class="container">
+    <h2 class="display-5 fw-bold text-dark text-center mb-4">Offres d'emploi</h2>
+    <div class="row g-4">
+      <div class="col-12 col-md-6 col-lg-4 rounded" *ngFor="let job of jobs">
+        <div class="card h-100 shadow-sm px-3 pt-3">
+            <h3 class="fw-bold mb-2">{{ job.title }}</h3>
+            <p class="mb-2 fs-5 fw-bold">{{ job.company }}</p>
+
+            <p class="text-muted small mb-3 fs-5">
+              <i class="bi bi-geo-alt-fill me-1"></i>{{ job.location }}
+            </p>
+
+            <div class="mb-3">
+              <span class="badge bg-secondary fs-5">
+                {{ job.jobtyp?.[0] || 'Contrat' }}
+              </span>
+            </div>
+            <div class="mb-3">
+              <a class="btn btn-primary fs-5">
+                Voir l’offre
+              </a>
+            </div>
+            <p class="text-muted small mt-auto fs-5">
+              {{ job.veroeffentlicht }}
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

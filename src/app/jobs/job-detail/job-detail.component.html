@@ -1,0 +1,22 @@
+<div class="container py-5" *ngIf="job">
+  <h1 class="fw-bold mb-3">{{ job.title }}</h1>
+  <p class="fs-5 mb-1"><strong>Entreprise :</strong> {{ job.company }}</p>
+  <p class="fs-5 mb-1"><strong>Localisation :</strong> {{ job.location }}</p>
+  <p class="fs-5 mb-1"><strong>Salaire :</strong> {{ job.salary || 'Non précisé' }}</p>
+
+  <p class="mt-4"><strong>Description :</strong></p>
+  <p>{{ job.description }}</p>
+
+  <div class="mt-4">
+    <strong>Type de contrat :</strong>
+    <span *ngFor="let t of job.jobtyp" class="badge bg-secondary me-2">{{ t }}</span>
+  </div>
+
+  <div class="mt-2">
+    <strong>Horaires :</strong>
+    <span *ngFor="let t of job.Arbeitszeit" class="badge bg-info me-2">{{ t }}</span>
+  </div>
+
+  <p class="text-muted mt-5">Publié le : {{ job.veroeffentlicht }}</p>
+</div>
+

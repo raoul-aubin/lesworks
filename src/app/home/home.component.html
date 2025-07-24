@@ -1,0 +1,67 @@
+<nav class="navbar  navbar-expand-lg px-3" style="background-color: #fff9e6;">
+  <div class="container-fluid">
+    <a class="navbar-brand  fw-bold text-primary" href="#">LesWorks</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link  text-primary"  routerLink="/">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  text-primary" routerLink="/jobs">Offres</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  text-primary" routerLink="/employeurs">Employeurs</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-primary ms-lg-4" routerLink="/inscription">S'inscrire</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="bg-warning-subtle">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Texte et formulaire à gauche -->
+      <div class="col-md-7 mb-4 mb-md-0">
+        <h1 class="display-5 fw-bold text-dark">Trouvez un emploi<br />rapidement</h1>
+        <p class="lead text-dark mb-4">Rejoignez des centaines d’employeurs en Afrique.</p>
+
+        <form class="row g-2">
+          <div class="col-12 col-md-6">
+            <input type="text" class="form-control" placeholder="Mot-clé">
+          </div>
+          <div class="col-12 col-md-6">
+            <select class="form-select">
+              <option>Type de contrat</option>
+            </select>
+          </div>
+          <div class="col-12 col-md-6">
+            <select class="form-select">
+              <option>Lieu</option>
+            </select>
+          </div>
+          <div class="col-12 col-md-6">
+            <button class="btn btn-primary w-100" type="submit">Rechercher</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Image à droite -->
+      <div class="col-md-5 text-center">
+        <img src="assets/afrique.png" alt="Carte Afrique" class="img-fluid">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
