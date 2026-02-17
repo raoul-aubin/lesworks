@@ -16,7 +16,7 @@
                 {{ job.jobtyp?.[0] || 'Contrat' }}
               </span>
             </div>
-            <div class="mb-3">
+            <div class="mb-3" (click)="goToJobDetail(job)">
               <a class="btn btn-primary fs-5">
                 Voir l’offre
               </a>
